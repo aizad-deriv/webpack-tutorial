@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+// Variables
+$font-family: "Inter", sans-serif;
+$font-size: 16px;
+$font-weight: 400;
+$header-size: 35px;
+$header-weight: 700;
+$bg-color: #0c0a09;
+$font-color: #e5e5e5;
+$heading-color: #fafafa;
+$border-color: #a3a3a3;
+
+body {
+  font-family: $font-family;
+  font-weight: $font-weight;
+  color: $font-color;
+  font-size: $font-size;
+  background-color: $bg-color;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 50px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.sitename {
+  color: $heading-color;
+}
+
+nav {
+  text-align: right;
+
+  a {
+    color: $border-color;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+}
+
+p {
+  line-height: 1.5;
+}
+
+section {
+  padding: 50px 0;
+}
+
+article {
+  h2 {
+    color: $heading-color;
+  }
+
+  time {
+    color: $border-color;
+  }
+
+  p {
+    padding-bottom: 25px;
+  }
+
+  img {
+    max-width: 100%;
+    background-size: cover;
+  }
+}
+
+.container {
+  margin-inline: 5%;
+}
+
+@media (max-width: 300px) {
+  nav {
+    text-align: left;
+  }
+}
